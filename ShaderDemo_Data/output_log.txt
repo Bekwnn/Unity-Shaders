@@ -1,0 +1,18 @@
+Initialize engine version: 4.5.2f1 (9abb1b59b47c)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [nvd3dum.dll 9.18.13.3788]
+    Renderer: NVIDIA GeForce GTX 770
+    Vendor:   NVIDIA
+    VRAM:     1990 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Bekwnn2\Documents\Unity-Demos\ShaderDemo_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Bekwnn2\Documents\Unity-Demos\ShaderDemo_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Bekwnn2\Documents\Unity-Demos\ShaderDemo_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Bekwnn2\Documents\Unity-Demos\ShaderDemo_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+- Completed reload, in  0.039 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Shader 'Custom/Toon/MagicAura': fallback shader 'Toon/Basic' not found

@@ -1,9 +1,24 @@
 Base path: C:/Program Files (x86)/Unity/Editor/Data
-Pipe name: \\.\pipe\UnityShaderCompiler-3-5380
+Pipe name: \\.\pipe\UnityShaderCompiler-3-1736
 Cmd: getPlatforms
 Cmd: compileSnippet
-  error: 2 plat 8 at (36): 'frag': input parameter 'i' missing semantics
-  api=8 type=1 insize=971 outsize=0 kw= ok=0
+  api=0 type=0 insize=5366 outsize=731 kw=DIRECTIONAL LIGHTMAP_ON DIRLIGHTMAP_OFF ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=5366 outsize=4808 kw=DIRECTIONAL LIGHTMAP_OFF DIRLIGHTMAP_OFF VERTEXLIGHT_ON ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=5366 outsize=1997 kw=DIRECTIONAL LIGHTMAP_ON DIRLIGHTMAP_OFF ok=1
+Cmd: compileSnippet
+  api=0 type=0 insize=2966 outsize=1039 kw=SPOT ok=1
+Cmd: compileSnippet
+  api=1 type=0 insize=2966 outsize=557 kw=POINT_COOKIE ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=2966 outsize=3330 kw=DIRECTIONAL_COOKIE ok=1
+Cmd: compileSnippet
+  api=0 type=1 insize=2966 outsize=767 kw=DIRECTIONAL ok=1
+Cmd: compileSnippet
+  api=1 type=1 insize=2966 outsize=879 kw=SPOT ok=1
+Cmd: compileSnippet
+  api=0 type=1 insize=2966 outsize=828 kw=DIRECTIONAL_COOKIE ok=1
 Unhandled exception: Readfile from pipe failed. GLE=The pipe has been ended.
 
 

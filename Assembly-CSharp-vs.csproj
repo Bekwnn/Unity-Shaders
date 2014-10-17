@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\UVHeightChange.cs" />
      <Compile Include="Assets\TerrainAlwaysLOD.cs" />
      <None Include="Assets\Shaders\ToonUVHeight.shader" />
      <None Include="Assets\Shaders\ScreenCordTex.shader" />
