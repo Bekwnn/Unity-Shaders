@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\TerrainAlwaysLOD.cs" />
      <None Include="Assets\Shaders\ToonUVHeight.shader" />
+     <None Include="Assets\Shaders\ScreenCordTex.shader" />
      <None Include="Assets\Shaders\ToonMagicAura.shader" />
      <None Include="Assets\Shaders\ToonWater.shader" />
      <None Include="Assets\Shaders\ToonSand.shader" />

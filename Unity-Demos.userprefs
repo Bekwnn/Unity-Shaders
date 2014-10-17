@@ -1,11 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\TerrainAlwaysLOD.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\horsegame\Assets\Scripts\Shaders\Magic\SpaceMagic.shader">
     <Files>
-      <File FileName="Assets\Shaders\ToonUVHeight.shader" Line="50" Column="25" />
-      <File FileName="Assets\Shaders\ToonMagicAura.shader" Line="1" Column="1" />
-      <File FileName="Assets\Shaders\ToonSand.shader" Line="72" Column="34" />
-      <File FileName="Assets\TerrainAlwaysLOD.cs" Line="7" Column="48" />
+      <File FileName="..\horsegame\Assets\Scripts\Shaders\Magic\SpaceMagic.shader" Line="1" Column="1" />
+      <File FileName="Assets\Shaders\ScreenCordTex.shader" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

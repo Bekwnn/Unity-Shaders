@@ -1,0 +1,10 @@
+Base path: C:/Program Files (x86)/Unity/Editor/Data
+Pipe name: \\.\pipe\UnityShaderCompiler-2-6900
+Cmd: getPlatforms
+Cmd: compileSnippet
+  error: 2 plat 8 at (28): 'vert': function return value missing semantics
+  api=8 type=0 insize=971 outsize=0 kw= ok=0
+Unhandled exception: Readfile from pipe failed. GLE=The pipe has been ended.
+
+
+Quitting shader compiler process

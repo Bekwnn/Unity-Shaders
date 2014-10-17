@@ -1,3 +1,85 @@
 Base path: C:/Program Files (x86)/Unity/Editor/Data
-Pipe name: \\.\pipe\UnityShaderCompiler-1-9748
+Pipe name: \\.\pipe\UnityShaderCompiler-1-3984
 Cmd: getPlatforms
+Cmd: preprocess
+  insize=996 outsize=324 ok=1
+Cmd: preprocess
+  insize=996 outsize=324 ok=1
+Cmd: preprocess
+  insize=996 outsize=324 ok=1
+Cmd: compileSnippet
+  error: 2 plat 8 at (29): 'vert': function return value missing semantics
+  api=8 type=0 insize=972 outsize=0 kw= ok=0
+Cmd: compileSnippet
+  error: 2 plat 8 at (37): 'frag': input parameter 'i' missing semantics
+  api=8 type=1 insize=972 outsize=0 kw= ok=0
+Cmd: preprocess
+  insize=1000 outsize=324 ok=1
+Cmd: compileSnippet
+  error: 2 plat 8 at (29): 'vert': function return value missing semantics
+  api=8 type=0 insize=976 outsize=0 kw= ok=0
+Cmd: compileSnippet
+  error: 2 plat 8 at (37): 'frag': input parameter 'i' missing semantics
+  api=8 type=1 insize=976 outsize=0 kw= ok=0
+Cmd: preprocess
+  insize=996 outsize=324 ok=1
+Cmd: compileSnippet
+  error: 2 plat 8 at (29): 'vert': function return value missing semantics
+  api=8 type=0 insize=972 outsize=0 kw= ok=0
+Cmd: compileSnippet
+  error: 2 plat 8 at (37): 'frag': input parameter 'i' missing semantics
+  api=8 type=1 insize=972 outsize=0 kw= ok=0
+Cmd: preprocess
+  insize=996 outsize=324 ok=1
+Cmd: compileSnippet
+  error: 2 plat 8 at (29): 'vert': function return value missing semantics
+  api=8 type=0 insize=972 outsize=0 kw= ok=0
+Cmd: compileSnippet
+  error: 2 plat 8 at (37): 'frag': input parameter 'i' missing semantics
+  api=8 type=1 insize=972 outsize=0 kw= ok=0
+Cmd: preprocess
+  insize=437 outsize=1183 ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=4279 outsize=2607 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=4279 outsize=1242 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=2255 outsize=2875 kw=POINT ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=2255 outsize=1542 kw=POINT ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=1783 outsize=1477 kw= ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=1783 outsize=632 kw= ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=3996 outsize=2883 kw=LIGHTMAP_OFF DIRLIGHTMAP_OFF HDR_LIGHT_PREPASS_OFF ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=3996 outsize=1152 kw=LIGHTMAP_OFF DIRLIGHTMAP_OFF HDR_LIGHT_PREPASS_OFF ok=1
+Cmd: preprocess
+  insize=999 outsize=324 ok=1
+Cmd: compileSnippet
+  error: 2 plat 8 at (29): 'vert': function return value missing semantics
+  api=8 type=0 insize=972 outsize=0 kw= ok=0
+Cmd: compileSnippet
+  error: 2 plat 8 at (37): 'frag': input parameter 'i' missing semantics
+  api=8 type=1 insize=972 outsize=0 kw= ok=0
+Cmd: preprocess
+  insize=1135 outsize=324 ok=1
+Cmd: preprocess
+  insize=999 outsize=324 ok=1
+Cmd: compileSnippet
+  error: 2 plat 8 at (29): 'vert': function return value missing semantics
+  api=8 type=0 insize=972 outsize=0 kw= ok=0
+Cmd: compileSnippet
+  error: 2 plat 8 at (37): 'frag': input parameter 'i' missing semantics
+  api=8 type=1 insize=972 outsize=0 kw= ok=0
+Cmd: preprocess
+  insize=998 outsize=324 ok=1
+Cmd: compileSnippet
+  api=1 type=0 insize=971 outsize=117 kw= ok=1
+Cmd: compileSnippet
+  api=1 type=1 insize=971 outsize=59 kw= ok=1
+Cmd: compileSnippet
+  api=0 type=0 insize=971 outsize=291 kw= ok=1
+Cmd: compileSnippet
+  api=0 type=1 insize=971 outsize=98 kw= ok=1
