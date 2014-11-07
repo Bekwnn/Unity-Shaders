@@ -49,7 +49,7 @@ void surf (Input IN, inout SurfaceOutput o) {
 }
 ENDCG
 
-Blend SrcColor DstColor
+Blend SrcColor One
 
 CGPROGRAM
 #pragma surface surf BlinnPhong
@@ -68,7 +68,7 @@ struct Input {
 void surf (Input IN, inout SurfaceOutput o) {
 	fixed4 specTex = tex2D(_SpecMap, IN.uv_SpecMap);
 	o.Albedo = _Color.rgb;
-	o.Gloss = _Gloss;
+	o.Gloss = specTex.g;
 	o.Specular = pow((1.0-specTex.g), _SpecPower);
 }
 ENDCG
