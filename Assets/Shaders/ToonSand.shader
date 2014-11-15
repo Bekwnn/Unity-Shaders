@@ -3,7 +3,6 @@ Properties {
 	_Color ("Main Color", Color) = (1,1,1,1)
 	_SpecColor ("Specular Color", Color) = (0.5, 0.5, 0.5, 1)
 	_SpecPower ("Specular Power", float) = 1
-	_Gloss ("Intensity", Range (0.03, 1.0)) = 0.7
 	_SpecMap ("Specular Map (RGB)", 2D) = "black" {}
 	_Ramp ("Toon Ramp (RGB)", 2D) = "grey" {}
 }

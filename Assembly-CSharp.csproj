@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\UVHeightChange.cs" />
      <Compile Include="Assets\TerrainAlwaysLOD.cs" />
+     <None Include="Assets\Shaders\ReflecSpec.shader" />
      <None Include="Assets\Shaders\ToonUVHeight.shader" />
      <None Include="Assets\Shaders\ScreenCordTex.shader" />
      <None Include="Assets\Shaders\ToonMagicAura.shader" />
