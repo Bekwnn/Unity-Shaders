@@ -1,9 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Shaders\ReflecSpec.shader">
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\horsegame\Assets\Scripts\Shaders\Toon\LightedOutline.shader">
     <Files>
-      <File FileName="Assets\Shaders\ReflecSpec.shader" Line="74" Column="3" />
-      <File FileName="Assets\Shaders\ToonSand.shader" Line="5" Column="42" />
+      <File FileName="..\horsegame\Assets\Scripts\Shaders\Toon\LightedOutline.shader" Line="15" Column="58" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
