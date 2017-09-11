@@ -1,4 +1,8 @@
-﻿Shader "Toon/ComicPrint" {
+﻿// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
+
+// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
+
+Shader "Toon/ComicPrint" {
 	Properties{
 		_MainTex("Texture", 2D) = "white" { }
 		_Threshold1("Light Threshold", Range(0,1)) = 0.8
@@ -29,6 +33,7 @@
 			float4  screenPos : TEXCOORD0;
 			fixed4  diff : COLOR0;
 			float2  uv : TEXCOORD1;
+			float3  modelPos : TEXCOORD2;
 		};
 
 		float4 _MainTex_ST;
@@ -40,12 +45,13 @@
 		{
 			v2f o;
 			o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
-			o.screenPos = mul(UNITY_MATRIX_MVP, v.vertex);
+			o.screenPos = mul(UNITY_MATRIX_MVP, v.vertex); //complained when accessing i.pos in frag for some reason
 			o.uv = TRANSFORM_TEX(v.texcoord, _MainTex);
 			half3 worldNormal = UnityObjectToWorldNormal(v.normal);
 			// dot product between normal and light direction for
 			// standard diffuse (Lambert) lighting
 			o.diff = max(0, dot(worldNormal, _WorldSpaceLightPos0.xyz));
+			o.modelPos = mul(UNITY_MATRIX_MVP, mul(float4(0, 0, 0, 1), unity_ObjectToWorld)).xyz;
 			return o;
 		}
 
@@ -56,16 +62,20 @@
 			texcol *= i.diff;
 			if (texcol.r > _Threshold1)
 			{
-				texcol = tex2D(_ShadowTexLight, float2(i.screenPos.x * _ShadowTexLight_ST.x, i.screenPos.y * _ShadowTexLight_ST.y) / i.screenPos.w);
+				texcol = tex2D(_ShadowTexLight, (float2(i.screenPos.x * _ShadowTexLight_ST.x, i.screenPos.y * _ShadowTexLight_ST.y) / i.screenPos.w) -
+					float2(i.modelPos.x * _ShadowTexMed_ST.x, i.modelPos.y * _ShadowTexMed_ST.y));
 			}
 			else if (texcol.r > _Threshold2)
 			{
-				texcol = tex2D(_ShadowTexMed, float2(i.screenPos.x * _ShadowTexMed_ST.x, i.screenPos.y * _ShadowTexMed_ST.y) / i.screenPos.w);
+				texcol = tex2D(_ShadowTexMed, (float2(i.screenPos.x * _ShadowTexMed_ST.x, i.screenPos.y * _ShadowTexMed_ST.y) / i.screenPos.w) - 
+					float2(i.modelPos.x * _ShadowTexMed_ST.x, i.modelPos.y * _ShadowTexMed_ST.y));
 			}
 			else
 			{
-				texcol = tex2D(_ShadowTexDark, float2(i.screenPos.x * _ShadowTexDark_ST.x, i.screenPos.y * _ShadowTexDark_ST.y) / i.screenPos.w);
+				texcol = tex2D(_ShadowTexDark, (float2(i.screenPos.x * _ShadowTexDark_ST.x, i.screenPos.y * _ShadowTexDark_ST.y) / i.screenPos.w) -
+					float2(i.modelPos.x * _ShadowTexMed_ST.x, i.modelPos.y * _ShadowTexMed_ST.y));
 			}
+			//half4 texcol = float4(i.modelPos.x, i.modelPos.y, 0, 1);
 			return texcol;
 		}
 		ENDCG
